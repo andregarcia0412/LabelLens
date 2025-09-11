@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:text="Tire uma foto do rótulo de um alimento para descobrir sua nota"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="32sp"
+        android:textColor="@color/green"/>
+
+    <LinearLayout
+
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp">
+            <ImageView
+                android:id="@+id/capturedImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_preview"
+                android:background="@drawable/image_mask"
+                android:clipToOutline="true"/>
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/openCamera"
+            android:layout_width="240dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Open camera"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/resultsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_regular"
+            android:textAlignment="center"
+            android:text=""/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

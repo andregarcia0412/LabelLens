@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LabelLens</string>
+
+    <string name="texto_com_tamanhos_diferentes">
+    <![CDATA[
+    Este texto é <big><b>GRANDE</b></big> e este é <small>pequeno</small>.
+    ]]>
+</string>
+</resources>
